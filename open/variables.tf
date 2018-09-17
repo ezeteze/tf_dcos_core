@@ -124,7 +124,7 @@ variable "num_of_public_agents" {
   default = ""
 }
 
-variable "num_of_private_agents" {
+variable "num_of_spark_agents" {
   default = ""
 }
 

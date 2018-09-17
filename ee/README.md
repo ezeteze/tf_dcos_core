@@ -425,7 +425,7 @@ resource "null_resource" "agent" {
     host = "${element(aws_instance.agent.*.public_ip, count.index)}"
     user = "${module.aws-tested-oses.user}"
   }
-  count = "${var.num_of_private_agents}"
+  count = "${var.num_of_spark_agents}"
 
   # Generate and upload Agent script to node
   provisioner "file" {
